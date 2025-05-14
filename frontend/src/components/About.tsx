@@ -23,8 +23,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Indian Institute of Technology</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Indian Institute of Technology, Guwahati</li>
+        <li>St John's High School, Chandigarh</li>
       </ul>
     ),
   },

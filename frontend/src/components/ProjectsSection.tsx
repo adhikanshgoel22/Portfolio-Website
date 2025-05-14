@@ -4,13 +4,16 @@ import ProjectCard from "./ProjectCard";
 // import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 import ph from "./me.png";
+import lib from "./lib.jpg";
+import grade from "./grade.png";
+import movie from "./movie.jpeg";
 
 const projectsData = [
   {
     id: 1,
     title: "Library Database Manager",
     description: "Project 1 description",
-    image: { ph },
+    imgUrl: lib,
     tag: ["All", "Web"],
     gitUrl: "https://github.com/adhikanshgoel22/Library-Database",
     previewUrl: { ph },
@@ -19,7 +22,7 @@ const projectsData = [
     id: 2,
     title: "Grade Visualiser",
     description: "Project 2 description",
-    image: { ph },
+    imgUrl: grade,
     tag: ["All", "Web"],
     gitUrl: "https://github.com/adhikanshgoel22/Grade-Visualiser",
     previewUrl: "/",
@@ -28,7 +31,7 @@ const projectsData = [
     id: 3,
     title: "Movie Recommendation System",
     description: "Project 3 description",
-    image: { ph },
+    imgUrl: movie,
     tag: ["All", "Web"],
     gitUrl: "https://github.com/adhikanshgoel22/Movie-Recommendation-System",
     previewUrl: "/",
@@ -37,7 +40,7 @@ const projectsData = [
   //   id: 4,
   //   title: "Food Ordering Application",
   //   description: "Project 4 description",
-  //   image: "/images/projects/4.png",
+  //   imgUrl: "/imgUrls/projects/4.png",
   //   tag: ["All", "Mobile"],
   //   gitUrl: "/",
   //   previewUrl: "/",
@@ -46,7 +49,7 @@ const projectsData = [
   //   id: 5,
   //   title: "React Firebase Template",
   //   description: "Authentication and CRUD operations",
-  //   image: "/images/projects/5.png",
+  //   imgUrl: "/imgUrls/projects/5.png",
   //   tag: ["All", "Web"],
   //   gitUrl: "/",
   //   previewUrl: "/",
@@ -55,7 +58,7 @@ const projectsData = [
   //   id: 6,
   //   title: "Full-stack Roadmap",
   //   description: "Project 5 description",
-  //   image: "/images/projects/6.png",
+  //   imgUrl: "/imgUrls/projects/6.png",
   //   tag: ["All", "Web"],
   //   gitUrl: "/",
   //   previewUrl: "/",
@@ -114,8 +117,8 @@ const ProjectsSection = () => {
             <ProjectCard
               key={project.id}
               title={project.title}
-              description={project.description}
-              imgUrl={project.image}
+              // description={project.description}
+              imgUrl={project.imgUrl}
               gitUrl={project.gitUrl}
             />
           </motion.li>
