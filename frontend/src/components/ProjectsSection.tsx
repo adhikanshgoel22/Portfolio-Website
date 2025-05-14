@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import ProjectCard from "./ProjectCard";
 // import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
-import ph from "./me.png";
+// import ph from "./me.png";
 import lib from "./lib.jpg";
 import grade from "./grade.png";
 import movie from "./movie.jpeg";
@@ -16,7 +16,7 @@ const projectsData = [
     imgUrl: lib,
     tag: ["All", "Web"],
     gitUrl: "https://github.com/adhikanshgoel22/Library-Database",
-    previewUrl: { ph },
+    // previewUrl: { ph },
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const projectsData = [
     imgUrl: grade,
     tag: ["All", "Web"],
     gitUrl: "https://github.com/adhikanshgoel22/Grade-Visualiser",
-    previewUrl: "/",
+    // previewUrl: "/",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const projectsData = [
     imgUrl: movie,
     tag: ["All", "Web"],
     gitUrl: "https://github.com/adhikanshgoel22/Movie-Recommendation-System",
-    previewUrl: "/",
+    // previewUrl: "/",
   },
   // {
   //   id: 4,
