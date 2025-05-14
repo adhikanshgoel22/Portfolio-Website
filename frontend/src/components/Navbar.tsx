@@ -18,6 +18,10 @@ const navLinks = [
     title: "Contact",
     path: "#connect",
   },
+  {
+    title: "CV",
+    path: "https://drive.google.com/file/d/11lSvQOTd-mhsm70j3judUiu5RH2jxxA4/view?usp=drive_link",
+  },
 ];
 
 const Navbar = () => {

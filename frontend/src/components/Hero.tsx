@@ -66,9 +66,9 @@ const HeroSection = () => {
             <Image
               src={mee}
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-3xl"
-              width={250}
-              height={250}
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-45 h-45 sm:w-64 sm:h-64 rounded-3xl "
+              //   height={250}
+              //   width={250}
             />
           </div>
         </motion.div>

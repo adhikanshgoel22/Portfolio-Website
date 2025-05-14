@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import lnk from "./linkedin.png";
 import git from "./github.png";
-import mail from "./mail2.png";
+import mail from "./mail.png";
 
 const Connect = () => {
   return (
