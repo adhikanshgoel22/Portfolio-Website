@@ -35,7 +35,7 @@ const AboutSection = () => {
   const [tab, setTab] = useState("skills");
   const [, startTransition] = useTransition(); // Remove `isPending` if not needed
 
-  const handleTabChange = (id) => {
+  const handleTabChange = (id: string) => {
     startTransition(() => {
       setTab(id);
     });
