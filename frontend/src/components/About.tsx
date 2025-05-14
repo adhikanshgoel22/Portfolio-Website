@@ -1,8 +1,9 @@
 "use client";
-import React, { useTransition, useState } from "react";
+import React, { useState, useTransition } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 import img1 from "./me.png";
+
 const TAB_DATA = [
   {
     title: "Skills",
@@ -28,21 +29,11 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  //   {
-  //     title: "Certifications",
-  //     id: "certifications",
-  //     content: (
-  //       <ul className="list-disc pl-2">
-  //         <li>AWS Cloud Practitioner</li>
-  //         <li>Google Professional Cloud Developer</li>
-  //       </ul>
-  //     ),
-  //   },
 ];
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
+  const [, startTransition] = useTransition(); // Remove `isPending` if not needed
 
   const handleTabChange = (id) => {
     startTransition(() => {
@@ -79,13 +70,6 @@ const AboutSection = () => {
               {" "}
               Education{" "}
             </TabButton>
-            {/* <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton> */}
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}

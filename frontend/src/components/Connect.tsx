@@ -11,7 +11,7 @@ const Connect = () => {
       id="connect"
     >
       <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-8">
-        Let's Connect
+        Let&apos;s Connect
       </h1>
 
       <div className="flex gap-8 sm:gap-10 md:gap-14 justify-center items-center">
