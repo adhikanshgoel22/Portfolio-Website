@@ -24,7 +24,7 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Indian Institute of Technology, Guwahati</li>
-        <li>St John's High School, Chandigarh</li>
+        <li>St John&apos;s High School, Chandigarh</li>
       </ul>
     ),
   },
